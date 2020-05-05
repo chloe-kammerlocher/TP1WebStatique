@@ -5,8 +5,58 @@
         <title> Titre </title>
     </head>
     <body>
-        <a href="textlistforms.html">Testes&Listes&Formulaires</a>
-        <a href="tables.html">Tableaux</a>
+        <a href="textlistforms.html">Testes&Listes&Formulaires</a> | 
+        <a href="tables.html">Tableaux</a> | 
         <a href="medias.html">Medias</a>
+        <hr>
+        <ul>
+            <li>
+                <u>Etudiant</u>
+            </li>
+            <li>
+                <u>Enseignant</u>
+            </li>
+            <li>
+                <u>Abbreviation</u>
+            </li>
+        </ul>
+        <hr>
+        <ol>
+        <h2><li>Etudiant</li></h2>
+        <form action="textlistforms.html" method="get">
+            Prénom:<input type="text" name="prenom">
+            Nom:<input type="text" name="name"><br>
+            Année d'études <input type="radio" name="1A" value="1A"> 1A <input type="radio" name="2A" value="2A"> 2A <br>
+            Remarques : <br>
+            <textarea name="remarques" rows="4" cols="50"></textarea> <br><br>
+            <input type="submit" value="Valider">
+            <hr>
+        </form>
+        <h2><li>Enseignants</li></h2>
+        <form action="medias.html" target="_blank" method="get">
+            Prénom:<br><input type="text" name="prenom"><br>
+            Nom:<br><input type="text" name="name"><br>
+            Site: <br> 
+            <select name="Site">
+                <option value="Brest">Brest</option>
+                <option value="Nantes">Nantes</option>
+                <option value="Rennes">Rennes</option>
+            </select> <br>
+            Mot de passe : <br>
+            <input type="password" > <br>
+            <br>
+            <input type="submit" value="Valider">
+            <hr>
+        </form>
+        <h2><li>Abbreviation</li></h2>
+        <dl>
+            <dt>ISEN</dt> <br>
+            <dd>Institut Superieur de l'Electronique et du Numerique</dd> <br>
+            <dt>HTML</dt><br>
+            <dd>HyperText Markup Language</dd>
+        </dl>
+        <hr>
+        </ol>
+        
     </body>
 </html>
